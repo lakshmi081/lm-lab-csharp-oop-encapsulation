@@ -3,8 +3,8 @@ namespace Encapsulation.Models
 {
     public class WeatherReporter
     {
-        public string _location;
-        public double _temperature;
+        private string _location;
+        private double _temperature;
 
         public WeatherReporter(string location, double temperature)
         {
@@ -18,7 +18,7 @@ namespace Encapsulation.Models
             return $"I am in {_location} and it is {Check1()}. {Check2()}. The temperature in Fahrenheit is {newTemp}.";
         }
 
-        public string Check1()
+        private string Check1()
         {
             if (_location == "London")
             {
@@ -41,7 +41,7 @@ namespace Encapsulation.Models
             return "🔆";
         }
 
-        public string Check2()
+        private string Check2()
         {
             if (_temperature > 30)
             {

@@ -1,4 +1,4 @@
-﻿/*// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 using Encapsulation.Models;
 
 const string MY_ACCOUNT_NUMBER = "ABCDEFG123";
@@ -56,7 +56,7 @@ Console.WriteLine("Oh no :( It looks like we can't do this - it's too secure!");
 //mySecureBankAccount._accountBalance = 1000000;
 mySecureBankAccount.DisplayAccountBalanceDetails();
 Console.WriteLine("😹 Well I guess that's secure!");
-*/
+
 
 //WeatherReporter
 
