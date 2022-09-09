@@ -3,36 +3,36 @@ namespace Encapsulation.Models
 {
     public class WeatherReporter
     {
-        public string Location;
-        public double Temperature;
+        public string _location;
+        public double _temperature;
 
         public WeatherReporter(string location, double temperature)
         {
-            Location = location;
-            Temperature = temperature;
+            _location = location;
+            _temperature = temperature;
         }
 
         public string Print()
         {
-            double newTemp = (9.0 / 5.0) * Temperature + 32;
-            return $"I am in {Location} and it is {Check1()}. {Check2()}. The temperature in Fahrenheit is {newTemp}.";
+            double newTemp = (9.0 / 5.0) * _temperature + 32;
+            return $"I am in {_location} and it is {Check1()}. {Check2()}. The temperature in Fahrenheit is {newTemp}.";
         }
 
         public string Check1()
         {
-            if (Location == "London")
+            if (_location == "London")
             {
 
                 return "🌦";
 
             }
-            else if (Location == "California")
+            else if (_location == "California")
             {
 
                 return "🌅";
 
             }
-            else if (Location == "Cape Town")
+            else if (_location == "Cape Town")
             {
 
                 return "🌤";
@@ -43,13 +43,13 @@ namespace Encapsulation.Models
 
         public string Check2()
         {
-            if (Temperature > 30)
+            if (_temperature > 30)
             {
 
                 return "It's too hot 🥵!";
 
             }
-            else if (Temperature < 10)
+            else if (_temperature < 10)
             {
 
                 return "It's too cold 🥶!";
